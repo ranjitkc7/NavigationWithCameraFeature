@@ -1,6 +1,7 @@
 import React from "react";
 import { Tabs } from "expo-router";
-import { FontAwesome } from "@expo/vector-icons";
+import { FontAwesome, AntDesign} from "@expo/vector-icons";
+
 
 const LayoutPage = () => {
   return (
@@ -13,9 +14,9 @@ const LayoutPage = () => {
           borderBottomWidth: 1,
         },
         tabBarStyle: {
-          backgroundColor: 'black', 
-          borderTopColor: "#ccff33", 
-          borderTopWidth: 2, 
+          backgroundColor: "black",
+          borderTopColor: "#ccff33",
+          borderTopWidth: 2,
         },
         tabBarActiveTintColor: "#ccff33",
         tabBarInactiveTintColor: "#ffffff",
@@ -26,7 +27,7 @@ const LayoutPage = () => {
         options={{
           title: "Home",
           tabBarIcon: ({ color }) => (
-            <FontAwesome size={28} name="home" color={color} />
+            <AntDesign size={28} name="camera" color={color} />
           ),
         }}
       />
@@ -35,7 +36,7 @@ const LayoutPage = () => {
         options={{
           title: "Profile",
           tabBarIcon: ({ color }) => (
-            <FontAwesome size={28} name="user" color={color} />
+            <FontAwesome size={28} name="microphone" color={color} />
           ),
         }}
       />
